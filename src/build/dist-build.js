@@ -21,7 +21,12 @@ async function copyDir(src, dest) {
 		'package.json',
 		'package-lock.json',
 		'phpcs.xml.dist',
-		'readme.txt'
+		'readme.txt',
+		'.idea',
+		'fonts-old',
+		'acf-json',
+		'acfe-php',
+		'README.md'
 	];
 
     for (let entry of entries) {

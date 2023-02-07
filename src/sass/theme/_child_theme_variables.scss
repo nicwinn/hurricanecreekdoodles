@@ -1,7 +1,234 @@
 // Use this file to overwrite the basic Bootstrap variables and add your own variables
 // To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder.
 // Just copy a variable from src/sass/assets/bootstrap5/_variables.scss, paste it here and edit the value.
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+.hcd-script-font {
+  font-family: 'Dancing Script', cursive;
+}
+
+$hcd-brown: #f3851c; // Thats a sample how you could change a BootStrap variable.
+$hcd-blue: #2766ad; // Thats a sample how you could change a BootStrap variable.
+$primary: $hcd-brown; // Once we've changed the value, we'll also make it the primary brand color.
+$secondary: $hcd-blue; // Once we've changed the value,'brown;  // Once we've changed the value, we'll also make it the primary brand color.
+//body.archive {
+//  .hcd-header {
+//    height: calc(50vh - 105px);
+//    background-image: url(../images/beautiful-hurricane-creek.jpg);
+//    background-size: cover;
+//    background-position: 100% 33%;
+//    background-repeat: no-repeat;
+//  }
+//}
+body #page {
+    padding: 12rem 0 6rem 0;
+  }
+h1, h2, h3, h4, h5, h6 {
+  color: #fff;
+  text-shadow: 1px 1px 0 black;
+}
+#content {
+  color: #fff;
+}
+main#main:not(p) {
+  color: revert;
+}
+.wp-block-quote {
+  overflow-wrap: break-word;
+  color: initial;
+  text-shadow: initial;
+}
+#full-width-page-wrapper, .wrapper {
+&:not(#wrapper-footer)
+  {
+    background-color: rgba(51, 81, 104, 0.85);
+    box-shadow: 1px 1px 3px;
+    margin: 0 14rem 10rem;
+    padding: 2rem 0;
+    border-radius: 3px;
+  }
+}
+.hcd-top-nav {
+  background-color: #a27526!important;
+  text-shadow: 1px 1px 2px #444;
+  color:#fefefe;
+
+  a.nav-link {
+    color: white !important;
+  }
+
+  h1 img {
+    padding: 0 0.3rem 0 0;
+  }
+
+  ul.dropdown-menu {
+    background: rgb(152 151 151);
+  }
+
+  a.dropdown-item {
+    color: white !important;
+  }
+
+  a.nav-link:hover {
+    color: #0b56c0 !important;
+    text-shadow: none;
+  }
+
+  .dropdown-item:focus, .dropdown-item:hover {
+    color: #1e2125;
+    background-color: #6c6d6e;
+  }
+}
+
+blockquote {
+  font-style: italic;
+  font-weight: 100;
+  align-items: center!important;
+  margin: 3rem 7rem!important;
+  padding: 4rem 6rem !important;
+  display: flex!important;
+  position: relative;
+  border-radius: 0.25rem;
+  font-size: 1.9rem !important;
+  overflow-wrap: break-word;
+  background: #eaeaea;
+  box-shadow: inset 1px 1px 2px #0c0c0c, inset 2px 2px 3px #515151, inset -1px -1px 2px #0c0c0c, inset -3px -3px 4px #434343;
+  text-align: center !important;
+  @media (min-width: 768px) {
+    blockquote {
+      padding: 1rem 3rem !important;
+      font-size: 1.3rem !important;
+    }
+  }
+  &:before {
+    content: "\f10d";
+    font-family: "fontawesome";
+    font-size: 5rem;
+    padding: 0 2rem 0 0;
+    position: relative;
+    line-height: 0;
+    margin-right: 0;
+    color: rgba(51, 81, 104, 0.85);
+    @media (min-width: 768px) {
+      &:before {
+        font-size: 2rem;
+        padding: 1rem 0.5rem;
+      }
+    }
+  }
+  &:after {
+    content: "\f10e";
+    font-family: "fontawesome";
+    font-size: 5rem;
+    padding: 3rem 1rem;
+    line-height: 0;
+    color: rgba(51, 81, 104, 0.85);
+    @media (min-width: 768px) {
+      &:after {
+        font-size: 2rem;
+        padding: 1rem 0.5rem;
+      }
+    }
+  }
+  p {
+    margin-bottom: 0;
+    text-align: center;
+  }
+  i.fa-solid {
+    color: #909090;
+    font-style: italic;
+    font-size: 2.3rem;
+    margin: 0 2rem 0 0;
+  }
+  cite {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .wp-block-columns {
+    align-items: center;
+    margin-bottom: 0;
+  }
+}
+
+.site-info {
+  color: #646464;
+}
 
 
-$purple: #5533ff; // Thats a sample how you could change a BootStrap variable.
-$primary: $purple;  // Once we've changed the value, we'll also make it the primary brand color.
+/* latin-ext */
+@font-face {
+  font-family: 'BenchNine';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/wp-content/themes/hurricanecreekdoodles/fonts/benchnine/latin.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'BenchNine';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/wp-content/themes/hurricanecreekdoodles/fonts/benchnine/latin-ext.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+#full-width-page-wrapper {
+  text-align: justify;
+  padding: 0.8rem;
+}
+
+
+
+
+.hcd-homepage-bernedoodle img {
+  float: left;
+  shape-outside: ellipse(49% 51% at 50% 47%);
+  margin-right: 2rem;
+  max-width: 39%;
+}
+
+#full-width-page-wrapper p {
+  margin-bottom: 1.5rem;
+}
+
+
+@media (min-width: 768px) {
+  #full-width-page-wrapper {
+    font-size: 1.6rem;
+  }
+}
+
+.navbar {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.navbar-dark .navbar-toggler {
+  border-color: transparent !important;
+}
+
+ul#hcd-social a {
+  margin: 1rem !important;
+  border-radius: 6px !important;
+  filter: saturate(0.5) !important;
+}
+
+//#wrapper-footer {
+//  background: #ddd;
+//  margin-top: 1rem;
+//  padding: 1.3rem 2rem 1.3rem 2rem;
+//  text-align: center;
+//}
+
+#wrapper-footer {
+  background: #ddd;
+  padding: 1.3rem 2rem 1.3rem 2rem;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin: 1rem 0 0 0;
+  z-index: 1000;
+}

@@ -1,0 +1,371 @@
+html {
+  height: 100vh;
+  background-image: url(https://hurricanecreekdoodles.nicwinn.com/wp-content/themes/hurricanecreekdoodles/images/beautiful-hurricane-creek.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body {
+  background-color: unset;
+}
+.navbar-brand a {
+  text-decoration: none;
+  font-family: 'BenchNine', sans-serif;
+  @media (min-width: 768px) {
+    .navbar-brand a {
+      font-size: 1.35rem;
+    }
+  }
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.hcd-top-nav h1 {
+  padding: 1rem 0 0 0;
+  font-size: 4rem;
+}
+.hcd-top-nav h1 a {
+  text-decoration: none;
+  font-family: 'BenchNine', sans-serif;
+  color: inherit;
+  @media (min-width: 768px) {
+    .hcd-top-nav h1 a {
+      font-size: 1.35rem;
+    }
+  }
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.n2-section-smartslider.fitvidsignore.n2_clear {
+  float: left;
+  width: 400px;
+  margin-right: 1rem;
+  border: 5px solid #fff;
+  display: inline-table;
+  box-shadow: 1px 1px 5px #333 inset, -1px -1px 5px #333 inset;
+  padding: 10px;
+  background: #a27526;
+}
+
+.site-main .acf-form {
+  background: #ffffff;
+  .acf-label {
+    font-size: 1.5rem;
+  }
+  ul.acf-radio-list.acf-hl li, ul.acf-checkbox-list.acf-hl li {
+    line-height: 3;
+  }
+}
+
+figcaption a {
+    color: #f3851c !important;
+    text-decoration: underline;
+&:hover {
+  color: #c26a16;
+}
+}
+figure.wp-block-image, .wp-block-image figure, .hcd-puppy-card, .hdc-puppy-photo-single {
+  display: block;
+  padding: 10px;
+  border: 5px solid #fff;
+  background: #a27526;
+  margin-bottom: 0.5rem !important;
+  box-shadow: 1px 1px 5px #333 inset, -1px -1px 5px #333 inset;
+  img {
+    margin-bottom: 0;
+  }
+}
+.hcd-puppy-card {
+  display: flex;
+  margin-bottom: 0 !important;
+}
+.wp-block-gallery.has-nested-images figure.wp-block-image figcaption {
+  background: #ffffffd6 !important;
+  color: inherit;
+  font-size: inherit;
+  left: -10px !important;
+  margin-bottom: 0;
+  max-height: 60%;
+  overflow: auto;
+  padding-bottom: 6px;
+  position: absolute;
+  text-align: center;
+  width: calc(100% - 20px) !important;
+  box-sizing: border-box;
+  margin-left: 20px;
+  bottom: 10px !important;
+}
+.puppies.type-puppies .card {
+  flex: 0 0 auto;
+}
+.card img.attachment-custom-image-portrait-puppy {
+  width:100%
+}
+
+.nav-item a {
+  font-family: BenchNine,sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.02rem;
+}
+.hcd-top-nav ul#main-menu {
+  list-style: none;
+  display: flex;
+  margin-bottom: 0;
+}
+//ACF front end style fixes
+.hdc-form-row-container > .acf-label:not(.acf-label ~ .acf-label) {
+  display: none;
+}
+.hdc-form-row-container {
+  border-top:0 !important;
+}
+
+.hcd-puppy-id {
+  position: absolute;
+  background: rgb(85 85 85 / 73%);
+  color: #fefefe !important;
+  padding: 0.1rem 0.3rem 0.2rem 0.5rem;
+  border-radius: 0 0.2rem 0 0.9rem;
+  text-align: center;
+  border-bottom: 1px solid #999;
+  right: 0;
+  z-index: 1;
+  font-size: 0.7rem;
+  opacity: .4;
+  font-weight: bold;
+}
+.hcd-puppy-id:hover {
+  opacity: 1;
+  color: #222 !important;
+}
+
+//Puppy card
+.hcd-puppy-card-details {
+  font-size: .8rem;
+}
+.hcd-puppy-card-details div {
+  padding: 0.1rem 0.2rem;
+}
+
+.col.hcd-puppies-archive {
+  width: 100%;
+  .card {
+    border-radius: 0 !important;
+    border: 0;
+  }
+}
+//Puppy single
+
+
+.hdc-puppy-photo-single {
+  img.attachment-medium.size-medium {
+    width: 100%;
+  }
+}
+
+.wp-block-gallery.has-nested-images figure.wp-block-image figcaption {
+  background: #fff;
+  bottom: 0;
+  color: inherit;
+  font-size: inherit;
+  left: 0;
+  margin-bottom: 0;
+  max-height: 60%;
+  overflow: auto;
+  padding: 0 8px 8px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+//=========================
+.hcd-testimonial {
+  align-items: center;
+  display: flex;
+  padding-bottom: 2rem;
+  .wp-block-image {
+    padding: unset;
+    border: unset;
+    background: unset;
+    margin-bottom: unset;
+    box-shadow: unset;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    outline: 5px solid #00000047;
+    img {
+      width: 100%;
+    }
+  }
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+    text-align: right;
+
+    .wp-block-image {
+      rotate: 8deg;
+    }
+  }
+  &:nth-child(odd) .wp-block-image {
+    rotate: 357deg;
+  }
+  &:nth-child(even) .hcd-testimonial-text {
+    transform: skew(-6deg, -1deg);
+    margin-right: -3.5rem;
+    padding: 2rem 7rem 2rem 2rem;
+  }
+  &:nth-child(odd) .hcd-testimonial-text {
+    transform: skew(2deg, 1deg);
+    margin-left: -4rem;
+    padding: 2rem 2rem 2rem 7rem;
+  }
+  .hcd-testimonial-text {
+    width:60%;
+    background: #fff;
+    font-size: 2rem;
+    font-family: 'Caveat', cursive;
+    line-height: 1.1;
+    word-spacing: 1px;;
+    .hcd-owner {
+      font-size: 2.6rem;
+      color: #2082a9 !important;
+      font-weight: bold;
+    }
+    * {
+      color: #3b3b3b !important;
+      text-shadow: none !important;
+    }
+  }
+  .hcd-testimonial-image {
+    z-index: 1;
+    width: 30%;
+    figcaption {
+      color: #333 !important;
+      font-size: 2.7rem!important;
+      font-weight: 700;
+      padding: unset !important;
+      background:#fff;
+      font-family: 'Permanent Marker', monospace;
+    }
+  }
+}
+//=========================
+
+.hcd-puppy-gallery {
+  display: flex;
+  justify-content: center;
+}
+
+.hcd-puppy-gallery-thumbnails {
+  display: flex;
+  flex-direction: column;
+  line-height: 0;
+
+  li {
+    flex: auto;
+  }
+
+  a {
+    display: block;
+  }
+
+  img {
+    width: 30vmin;
+    height: 20vmin;
+    object-fit: cover;
+    object-position: top;
+  }
+}
+
+.hcd-puppy-gallery-photos {
+  overflow: hidden;
+  width: 75vmin;
+  height: 100vmin;
+
+  li {
+    width: 75vmin;
+    height: 100vmin;
+    position: absolute;
+    z-index: 1;
+  }
+
+  img {
+    height: 100vmin;
+    object-fit: cover;
+    object-position: top;
+  }
+}
+
+.hcd-puppy-gallery-photos li:target {
+  z-index: 3;
+  -webkit-animation: slide 1s 1;
+}
+
+.hcd-puppy-gallery-photos li:not(:target) {
+  -webkit-animation: hidden 1s 1;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes hidden {
+  0% {
+    z-index: 2;
+  }
+  100% {
+    z-index: 2;
+  }
+}
+
+//=========================
+
+
+
+
+//.hdc-gallery-circles {
+//  figure {
+//    overflow: hidden;
+//    border: 3rem solid transparent;
+//    figcaption {
+//    background: rgba(1,1,1,.5) !important;
+//    bottom: 25% !important;
+//    font-size: 1rem !important;
+//    padding: 0.5rem !important;
+//    }
+//    a img {
+//      border: 0 solid;
+//      margin-bottom: 0;
+//    }
+//  }
+//
+//}
+
+//.hdc-litter-link {
+//  &:hover {
+//    &:after{
+//      content: "See more puppies from this litter.";
+//      color: #222;
+//      display: inline-block;
+//      font-size: 0.8rem;    }
+//  }
+//}
+//.hdc-breed-link {
+//  &:hover {
+//    &:after{
+//      content: "See more puppies of this breed.";
+//      color: #222;
+//      display: inline-block;
+//      font-size: 0.8rem;    }
+//  }
+//}
