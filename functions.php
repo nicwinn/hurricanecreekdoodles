@@ -87,3 +87,49 @@ function understrap_child_customize_controls_js() {
 	);
 }
 add_action( 'customize_controls_enqueue_scripts', 'understrap_child_customize_controls_js' );
+
+/** additional media sizes */
+require_once( 'functions/media_sizes.php' );
+
+//use archive template
+function puppy_template( $template = '' ) {
+
+    if (is_tax(array('breed','litter'))) {
+        $template = locate_template( 'archive-puppies.php' );
+    }
+
+    return $template;
+
+}
+
+add_filter( 'taxonomy_template', 'puppy_template' );
+
+//add post count to menu
+add_filter('wp_setup_nav_menu_item', 'puppy_count_in_menu');
+function puppy_count_in_menu($item)
+{
+    if ('taxonomy' === $item->type) {
+
+        $posts = get_posts(array(
+            'post_type' => 'puppies',
+            'numberposts' => -1,
+            'tax_query' => array(
+                array(
+                    'taxonomy' => 'breed',
+                    'field' => 'id',
+                    'terms' => $item->object_id, // Where term_id of Term 1 is "1".
+                    'include_children' => true
+                )
+            )
+        ));
+        if (count($posts) > 0) {
+            $item->title = $item->title . '(' . count($posts) . ')';
+        }
+        else {
+            $item->classes[] = 'd-none';
+        }
+    }
+
+
+    return $item;
+}
