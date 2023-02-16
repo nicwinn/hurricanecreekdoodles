@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="On explicit save action" serverName="doodles" remoteFilesAllowedToDisappearOnAutoupload="false" confirmBeforeUploading="false" autoUploadExternalChanges="true">
+    <option name="confirmBeforeUploading" value="false" />
+    <serverData>
+      <paths name="doodles">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$/" web="/" />
+            <mapping deploy="/acf-json/" local="$PROJECT_DIR$/acf-json" web="/acf-json/" />
+            <mapping deploy="/acfe-php/" local="$PROJECT_DIR$/acfe-php/" web="/acfe-php/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath path="/src" />
+            <excludedPath path=".gitignore" />
+            <excludedPath path="/acf-json" />
+            <excludedPath path="/acfe-php" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+      <paths name="understrap">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$/../understrap/" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath path="/src" />
+            <excludedPath path=".gitignore" />
+            <excludedPath path="/acf-json" />
+            <excludedPath path="/acfe-php" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ON_EXPLICIT_SAVE" />
+  </component>
+</project>
